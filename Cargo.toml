@@ -2,3 +2,6 @@
 name = "regex_replace_error"
 version = "0.1.0"
 authors = ["Sean Hagar <rcix2010@gmail.com>"]
+
+[dependencies.regex]
+regex = "0.1.30"
