@@ -10,7 +10,7 @@ fn main() {
         Err(err) => panic!("Error '{}' with regex '{}'", err, &"t(.)d")
     };
     let value = match regex.is_match(&source) {
-        true => regex.replace_all(&source, &replace),
+        true => regex.replace_all(&source, &replace.as_str()),
         false => String::from_str("none"),
     };
 
